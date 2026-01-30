@@ -8,80 +8,63 @@
 </head>
 <body>
 
-  <!-- BALLOON FLOAT BACKGROUND -->
-  <div class="balloon-bg">
-    <span></span><span></span><span></span><span></span><span></span>
+<!-- FLOATING BALLOONS -->
+<div class="balloon-bg">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-wrap">
+    <div class="logo bounce">HOME BALLOON</div>
+    <nav>
+      <a href="#">SHOP</a>
+      <a href="#">ABOUT</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+  <img src="IMG_2464.jpeg" alt="Home Balloon Banner">
+</section>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="wiggle">HOME BALLOON</h1>
+  <p>Original balloon in Suratthani 🎈</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+
+  <div class="item">
+    <img src="IMG_2448.jpeg">
+    <p>Rose Gold Balloon Set</p>
   </div>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="nav-wrap">
-      <div class="logo reveal">HOME BALLOON</div>
-      <nav>
-        <a href="#" class="reveal delay-1">SHOP</a>
-        <a href="#" class="reveal delay-2">ABOUT</a>
-        <a href="#" class="reveal delay-3">CONTACT</a>
-      </nav>
-    </div>
-  </header>
+  <div class="item">
+    <img src="IMG_2450.jpeg">
+    <p>Luxury Flower Balloon</p>
+  </div>
 
-  <!-- BANNER -->
-  <section class="banner reveal">
-    <img src="IMG_2464.jpeg" alt="Home Balloon Banner">
-  </section>
+  <div class="item">
+    <img src="IMG_2451.jpeg">
+    <p>Kids Party Balloon</p>
+  </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1 class="reveal">HOME BALLOON</h1>
-    <p class="reveal delay-1">Original balloon in Suratthani</p>
-  </section>
+  <div class="item">
+    <img src="IMG_2452.jpeg">
+    <p>White Gold Balloon</p>
+  </div>
 
-  <!-- GALLERY -->
-  <section class="gallery">
+  <div class="item">
+    <img src="IMG_2459.jpeg">
+    <p>Pastel Balloon Bouquet</p>
+  </div>
 
-    <div class="item reveal">
-      <img src="IMG_2448.jpeg" alt="Rose Gold Balloon">
-      <p class="product-name">Rose Gold Balloon Set</p>
-    </div>
-
-    <div class="item reveal delay-1">
-      <img src="IMG_2450.jpeg" alt="Luxury Balloon">
-      <p class="product-name">Luxury Flower Balloon</p>
-    </div>
-
-    <div class="item reveal delay-2">
-      <img src="IMG_2451.jpeg" alt="Kids Balloon">
-      <p class="product-name">Kids Party Balloon</p>
-    </div>
-
-    <div class="item reveal">
-      <img src="IMG_2452.jpeg" alt="White Gold Balloon">
-      <p class="product-name">White Gold Balloon</p>
-    </div>
-
-    <div class="item reveal delay-1">
-      <img src="IMG_2459.jpeg" alt="Pastel Balloon">
-      <p class="product-name">Pastel Balloon Bouquet</p>
-    </div>
-
-  </section>
-
-  <!-- SCROLL REVEAL SCRIPT (MINIMAL & SMOOTH) -->
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, {
-      threshold: 0.15
-    });
-
-    reveals.forEach(el => observer.observe(el));
-  </script>
+</section>
 
 </body>
 </html>
